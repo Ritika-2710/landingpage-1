@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" type="text/css" href="same.css">	
+	<title>Landing Page</title>
+</head>
+<style>
+	@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,600;1,700;1,800;1,900&display=swap');
+body{
+	margin:0;
+	padding: 0;
+	font-family: sans-serif;
+	overflow-x: hidden;
+}
+
+.font-mont{
+	font-family: 'Montserrat',sans-serif;
+}
+.font-nunito{
+	font-family:  'Nunito Sans', sans-serif;
+	font-size:15px;
+}
+header
+{
+	display: flex;
+	justify-content: space-around;
+}
+.menu ul
+{
+	list-style-type: none;
+	display: flex;
+	justify-content: space-around;
+     padding:15px 0;
+}
+.menu ul li
+{
+	text-decoration: none;
+	margin:0 20px;
+	padding:0 10px;
+}
+.menu ul li:hover
+{
+	background-color: pink;
+	cursor: pointer;
+	border-radius: 10px;
+}
+.page2
+{
+	margin-top: 5%;
+}
+.button
+{
+  
+  width: max-content;
+  background-color:#cc4195; 
+  border: none;
+  border-radius: 7px;
+  color: white;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+.button:hover
+{
+	  box-shadow: 0 0 11px rgba(33,33,33,.2); 
+}
+.image img
+{
+    width:100%;
+}
+.text
+{
+	display:flex;
+	justify-content: center;
+	flex-direction: column;
+	padding:10px 40px;
+}
+.text p
+{
+	font-size: 15px;
+}
+.text1
+{
+	display:flex;
+	justify-content: center;
+	flex-direction: column;
+	padding:10px 0px;
+}
+
+.text .span
+{
+	width:100px;
+	height:5px;
+	border-radius: 7px;
+	background-color: #cc4195;
+	margin-bottom: 7px;
+}
+.text1 .span
+{
+	width:100px;
+	height:5px;
+	border-radius: 7px;
+	background-color: #cc4195;
+	margin-bottom: 7px;
+}
+.page3,.page4,.page5,.page6
+{
+	margin-top: 5%;
+}
+.part
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding:20px;
+	border-radius: 7px;
+	box-shadow: 0 0 13px rgba(33,33,33,.1);
+	height:150px; 
+	transition: .5s;
+}
+.part:hover
+{
+	background-color: purple;
+	cursor: pointer;
+}
+.part:hover .my-i
+{
+	color: white;
+}
+.part i
+{
+    font-size:50px;
+	transition: .5s;
+
+	color: #cc4195;
+}
+.after-img{
+
+}
+.after-img:after{
+	content: '';
+	width: 50px;
+	height: 50px;
+	margin-left: 20px;
+	background:url(plus-sign.svg); 
+	position: absolute;
+}
+.innerpart
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	box-shadow: 0 0 13px rgba(33,33,33,.1);
+	padding:40px 20px;
+	border-radius: 15px;
+}
+.innerpart:hover
+{
+	background-color: #cc4195;
+	cursor: pointer;
+}
+.innerpart:hover .my
+{
+	color: white;
+}
+.innerpart p
+{
+	text-align: center;
+}
+.circle
+{
+	width:120px;
+	height:120px;
+	border-radius: 50%;
+	background-color:lightgray;
+	margin-bottom: 10px;
+}
+.circle img
+{
+	width:120px;
+	height:120px;
+	border-radius: 50%;
+}
+.innerpart h3
+{
+	font-size:25px;
+	font-weight: 600px;
+}
+/*footer{
+	background:url(footer.svg); 
+	background-size: 100%;
+	background-repeat: no-repeat;
+}*/
+.outerpart
+{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.outerpart img
+{
+	width:100%;
+	margin-bottom: 15px;
+}
+.outerpart h3
+{
+	font-size:20px;
+	text-align: left;
+}	
+.outerpart a
+{
+	text-decoration: none;
+	color:#cc4195;
+	font-size: 17px;
+}
+.star
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 10px;
+}
+.star i
+{
+	margin:0px 5px;
+	color:#dada1a;
+}
+@media screen and (max-width:991px)
+{
+     .mediaquery
+     {
+     	margin:30px 0px;
+     }
+     .text
+     {
+     	padding:20px 0px;
+     }
+}
+.footer1
+{
+	color:white;
+	background-color: #cc4195;
+}
+.footerpart1
+{
+	display: flex;
+	justify-content:center;
+	align-items: center;
+	flex-direction: column;
+}
+.footerpart2
+{
+	margin-top: 5%;
+   display: flex;
+	justify-content:center;
+	flex-direction: row;	
+}
+.buttonparts button
+{
+	margin:0px 15px;
+	color:black;
+	background-color: white;
+}
+.innerfooter
+{
+	width:20%;
+	height:auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+@media screen and (max-width:991px)
+{
+	.innerfooter
+	{
+          width:90%;
+	}
+}
+.innerfooter ul
+{
+	list-style-type: none;
+	color:white;
+}
+.innerfooter h5
+{
+	margin-left: 30px;
+}
+
+</style>
+<body>
+<header>
+		<div class="logo">
+			<h3>Analog</h3>
+		</div>
+		<div class="menu">
+			<ul>
+				<li>Home</li>
+				<li>Services</li>
+				<li>Pages</li>
+				<li>Contact</li>
+			</ul>
+		</div>
+</header>
+<div class="Mainpage">
+</div>
+<section class="page2">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6">
+                <div class="image">
+                	<img src="workplace.jpg">
+                </div>
+			</div>
+			<div class="col-lg-6 d-flex">
+				<div class="text">
+					<h2 class="font-mont after-img">About <span style="color: #cc4195;">Us</span></h2>
+					<span class="span"></span>
+					<br/>
+					<p class="font-nunito">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat.</p>
+					<button class="button">Get Info</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="page3">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6 d-flex	">
+                <div class="text1">
+					<h3 class="font-mont">Want to network with top digital<br/>entreprenurs <span style="color: #cc4195;">while on the vacation <br/></span>of a lifetime?
+					</h3>
+					<span class="span"></span>
+					<br/>
+					<p class="font-nunito">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat.</p>
+					<button class="button">Get Info</button>
+				</div>
+			</div>
+			<div class="col-lg-6">
+				<div class="image">
+				  <img src="socialmedia.svg">
+			    </div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="page4">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+			   <h2 class="font-mont" style="text-align: center;">Special <span style="color:#cc4195;">Service</span>
+			   </h2>
+			 </div>
+		</div>
+		<div class="row">
+			<div class="col-lg-12">
+			   <p class="font-nunito" style="text-align: center;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+			   </p>
+			 </div>
+		</div><br/>
+		<div class="row">
+			<div class="col-lg-4 mediaquery">
+				<div class="part">
+					<i class="fa my-i fa-youtube-play" aria-hidden="true"></i>
+				</div>
+			</div>
+			<div class="col-lg-4 mediaquery">
+				<div class="part">
+					<i class="fa my-i fa-music" aria-hidden="true"></i>
+				</div>
+			</div>
+			<div class="col-lg-4 mediaquery">
+				<div class="part">
+					<i class="fa my-i fa-film" aria-hidden="true"></i>
+				</div>
+			</div>
+		</div>
+		<br/><br/><br/>
+		<div class="row">
+			<div class="col-lg-6">
+				<div class="image">
+				  <img src="people.svg">
+				</div>
+			</div>
+			<div class="col-lg-6">
+				<div class="text">
+					<h3 class="font-mont">Millions of jobs,finds the one <br/><span style="color: #cc4195;">the one thats right for you.</span>
+					</h3>
+					<span class="span"></span>
+					<p class="font-nunito">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat.</p>
+					<button class="button">Get Info</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="page5">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+			   <h2 class="font-mont" style="text-align: center;">What <span style="color:#cc4195;">Client Says</span>
+			   </h2>
+			 </div>
+		</div>
+		<div class="row">
+			<div class="col-lg-12">
+			   <p class="font-nunito" style="text-align: center;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.
+			   </p>
+			 </div>
+		</div>
+		<div class="row">
+			<div class="col-lg-4 mediaquery">
+				<div class="innerpart">
+					<div class="circle">
+						<img src="client2.jpg">
+					</div>
+					<h3 class="font-nunito my">Ankita Joshi</h3>
+					<div class="star">
+						<i class="fa fa-star" aria-hidden="true"></i>
+						<i class="fa fa-star" aria-hidden="true"></i>
+						<i class="fa fa-star" aria-hidden="true"></i>
+						<i class="fa fa-star" aria-hidden="true"></i>
+						<i class="fa fa-star" aria-hidden="true"></i>
+					</div>
+                    <p class="font-nunito my">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+				</div>
+			</div>
+			<div class="col-lg-4 mediaquery">
+				<div class="innerpart">
+					<div class="circle">
+						<img src="client3.jpg">
+
+					</div>
+					<h3 class="font-nunito my">Ritika Muktawat</h3>
+					<div class="star">
+						<i class="fa fa-star" aria-hidden="true"></i>
+						<i class="fa fa-star" aria-hidden="true"></i>
+						<i class="fa fa-star" aria-hidden="true"></i>
+						<i class="fa fa-star" aria-hidden="true"></i>
+						<i class="fa fa-star" aria-hidden="true"></i>
+					</div>
+					<p class="font-nunito my">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+				</div>
+			</div>
+			<div class="col-lg-4 mediaquery">
+				<div class="innerpart">
+					<div class="circle">
+						<img src="client2.jpg">
+
+					</div>
+					<h3 class="font-nunito my">Jeet Makwana</h3>
+					<div class="star">
+						<i class="fa fa-star" aria-hidden="true"></i>
+						<i class="fa fa-star" aria-hidden="true"></i>
+						<i class="fa fa-star" aria-hidden="true"></i>
+						<i class="fa fa-star" aria-hidden="true"></i>
+						<i class="fa fa-star" aria-hidden="true"></i>
+					</div>
+					<p class="font-nunito my">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                </div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="page6">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+			   <h2 class="font-mont" style="text-align: center;">Our Special <span style="color:#cc4195;">Blog</span>
+			   </h2>
+			 </div>
+		</div>
+		<div class="row">
+			<div class="col-lg-12">
+			   <p class="font-nunito" style="text-align: center;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.
+			   </p>
+			 </div>
+		</div>
+		<div class="row">
+			<div class="col-lg-4 outerpart">
+				<div class="workimage">
+				<img src="work.jpeg">
+				<h3 class="font-nunito">Customized experience teams</h3>
+				<p class="font-nunito" style="text-align:left">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.
+			   </p>
+			   <a href="#">Read More</a>
+			</div>
+			</div>
+			<div class="col-lg-4 outerpart">
+				<div class="workimage">
+				<img src="work.jpeg">
+				<h3 class="font-nunito">Customized experience teams</h3>
+				<p class="font-nunito" style="text-align:left">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.
+			   </p>
+			   <a href="#">Read More</a>
+			</div>
+			</div>
+			<div class="col-lg-4 outerpart">
+				<div class="workimage">
+				<img src="work.jpeg">
+				<h3 class="font-nunito">Customized experience teams</h3>
+				<p class="font-nunito" style="text-align:left">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.
+			   </p>
+			   <a href="#">Read More</a>
+			</div>
+			</div>
+	</div>
+</section>
+</div><br/><br/><br/>
+<footer>
+	<div class="footer1">
+		<div class="footerpart1">
+			<h3>Analog</h3><br/>
+			<div class="buttonparts">
+				<button class="button">Get contact</button>
+				<button class="button">connect Us</button>
+		    </div>
+		</div>
+		<div class="footerpart2">
+			<div class="innerfooter">
+				<h5>Actual</h5>
+				<ul>
+					<li>part-1</li>
+					<li>part-2</li>
+					<li>part-3</li>
+					<li>part-4</li>
+					<li>part-5</li>
+					<li>part-6</li>
+					<li>part-7</li>
+                </ul>
+			</div>
+			<div class="innerfooter">
+				<h5>Actual</h5>
+				<ul>
+					<li>part-1</li>
+					<li>part-2</li>
+					<li>part-3</li>
+					<li>part-4</li>
+					<li>part-5</li>
+					<li>part-6</li>
+					<li>part-7</li>
+                </ul>
+			</div>
+			<div class="innerfooter">
+				<h5>Actual</h5>
+				<ul>
+					<li>part-1</li>
+					<li>part-2</li>
+					<li>part-3</li>
+					<li>part-4</li>
+					<li>part-5</li>
+					<li>part-6</li>
+					<li>part-7</li>
+                </ul>
+			</div>
+			<div class="innerfooter">
+				<h5>Actual</h5>
+				<ul>
+					<li>part-1</li>
+					<li>part-2</li>
+					<li>part-3</li>
+					<li>part-4</li>
+					<li>part-5</li>
+					<li>part-6</li>
+					<li>part-7</li>
+                </ul>
+			</div>
+		</div>
+	</div>
+</footer>
+</body>
+</html>
